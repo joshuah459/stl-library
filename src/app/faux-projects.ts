@@ -6,7 +6,7 @@ export const PROJECT: Project[]= [
         name: "Project 1",
         description: "a template task",
         img_src: "https://ae01.alicdn.com/kf/HTB1GjLUOFXXXXa6aXXXq6xXFXXXx/sexy-woman-3D-model-stl-format-for-cnc-machine-relief-artcam.jpg_Q90.jpg_.webp",
-        stl_src: "https://ae01.alicdn.com/kf/HTB1GjLUOFXXXXa6aXXXq6xXFXXXx/sexy-woman-3D-model-stl-format-for-cnc-machine-relief-artcam.jpg_Q90.jpg_.webp",
+        stl_src: "https://dl.dropboxusercontent.com/s/lgew8lxj997nlj1/head.stl",
         download_src: "https://www.dropbox.com/s/v4o3veaikt1oyyf/Candidate1RC2.zip?dl=1"
     },
     {
@@ -15,7 +15,7 @@ export const PROJECT: Project[]= [
         name: "Project 2",
         description: "a template task",
         img_src: "https://preview.free3d.com/img/2014/01/2174831695214151442/2xdr2d84-900.jpg",
-        stl_src: "dkskjsdhfksjdf",
+        stl_src: "https://dl.dropboxusercontent.com/s/8jnn0lq0q81xuno/Splicer_Bunny.stl",
         download_src: "https://www.dropbox.com/s/wxtyqtk3pckvdwm/FFcandidate2.zip?dl=1"
     },
 ];

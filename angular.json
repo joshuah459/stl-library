@@ -72,7 +72,8 @@
               "browserTarget": "zogoProject:build:production"
             },
             "development": {
-              "browserTarget": "zogoProject:build:development"
+              "browserTarget": "zogoProject:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

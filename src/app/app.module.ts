@@ -18,9 +18,14 @@ import { HeaderComponent } from './component/header/header.component';
 import { ButtonComponent } from './component/button/button.component';
 import { ProjectComponent } from './component/project/project.component';
 import { ProjectEntryComponent } from './component/project-entry/project-entry.component';
-import { ProjectUserComponent } from './component/project-user/project-user.component';
 import { StlViewerComponent } from './component/stl-viewer/stl-viewer.component';
+import { ProjectPreviewCardComponent } from './component/project-preview-card/project-preview-card.component';
 
+//3rd party
+import { StlModelViewerModule } from  'angular-stl-model-viewer';
+
+//http
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -31,8 +36,8 @@ import { StlViewerComponent } from './component/stl-viewer/stl-viewer.component'
     ButtonComponent,
     ProjectComponent,
     ProjectEntryComponent,
-    ProjectUserComponent,
     StlViewerComponent,
+    ProjectPreviewCardComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -43,7 +48,9 @@ import { StlViewerComponent } from './component/stl-viewer/stl-viewer.component'
     MatInputModule,
     AppRoutingModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    StlModelViewerModule,
+    HttpClientModule
   ],
   entryComponents:[MatDialogModule,ProjectEntryComponent],
   providers: [],

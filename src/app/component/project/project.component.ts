@@ -19,7 +19,7 @@ export class ProjectComponent implements OnInit {
       hasBackdrop: true,
       width: "60%",
       height: "70%",
-      data: { projectID: "1"},
+      data: { projectID: "2"},
       autoFocus: false,
     });
 

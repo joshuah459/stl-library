@@ -1,2 +1,5 @@
 <app-header></app-header>
-<app-project></app-project>
+<div>
+    <h1>Featured Projects:</h1>
+    <app-project-preview-card *ngFor="let project of Projects"></app-project-preview-card>
+</div>
