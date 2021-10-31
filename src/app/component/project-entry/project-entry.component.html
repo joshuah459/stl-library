@@ -1,0 +1,18 @@
+<div class="centerCard">
+<mat-card class="projectCard">
+    <mat-card-title class="projectTitle" ><h1>{{project.name}}</h1></mat-card-title>
+
+    <img mat-card-image src={{project.img_src}}>
+    <mat-card-content>
+        <mat-card-header>
+            <div mat-card-avatar style="background-image: url({{currentUser.image}})" class="projectHeaderImg"></div>
+            <mat-card-subtitle>{{currentUser.name}}</mat-card-subtitle>
+          </mat-card-header>
+      <p>
+        {{project.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>
+</div>
