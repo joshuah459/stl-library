@@ -1,4 +1,5 @@
 .projectCard {
+  
     width: 180px;
     height: 210px;
     text-align: center;
@@ -9,3 +10,7 @@
     width: 200;
   }
 
+.mat-card{
+  margin-top: 20px;
+  margin-left: 50px;
+}

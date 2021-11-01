@@ -29,6 +29,7 @@ import { StlModelViewerModule } from  'angular-stl-model-viewer';
 import { HttpClientModule } from '@angular/common/http';
 import { ResultsContainerComponent } from './component/results-container/results-container.component';
 import { SearchBarContainerComponent } from './component/search-bar-container/search-bar-container.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 
 
@@ -43,6 +44,7 @@ import { SearchBarContainerComponent } from './component/search-bar-container/se
     ProjectPreviewCardComponent,
     ResultsContainerComponent,
     SearchBarContainerComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserAnimationsModule,

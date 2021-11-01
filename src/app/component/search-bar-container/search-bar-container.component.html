@@ -1,3 +1,6 @@
 <div class="searchContainer">
-    <input matInput type="text"  [(ngModel)]="searchword"(input)="searchThis()">
+    <input matInput class="searchBar" type="text"  (input)="searchThis()" placeholder="  Search STLs">
+    <button class="searchButton" mat-icon-button aria-label="Github Repo containing this program.">
+        <mat-icon>search</mat-icon>
+      </button>
 </div>

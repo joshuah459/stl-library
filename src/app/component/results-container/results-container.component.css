@@ -1,0 +1,10 @@
+.title{
+    margin-left: 25px;
+    
+}
+.content{
+    border-top: 10px solid rgb(25, 34, 160);
+}
+.projectCardComp{
+    padding: 100px, 15px, 15px, 100px;
+}

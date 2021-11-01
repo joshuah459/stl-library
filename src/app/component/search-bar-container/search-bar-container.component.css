@@ -1,4 +1,27 @@
 .searchContainer {
-    min-height: 30%;
-    background-color: rgb(219, 219, 219);
+    min-height: 300px;
+    min-width: 100%;
+    
+    font-size: 30px;
+    background-color: rgb(141, 141, 141);
+    height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.searchBar {
+    padding-left: 20px;
+    border-radius: 2em;
+    height: 50px;
+    width: 40%;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+
+.searchButton {
+    position: relative;
+    right: 4%;
+  }

@@ -12,7 +12,7 @@ export class SearchBarContainerComponent implements OnInit {
   ngOnInit(): void {
   }
   searchThis(){
-    this.searchcriteria.emit(this.searchword)
+    this.searchcriteria.emit()
   }
 
 }
