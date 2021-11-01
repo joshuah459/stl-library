@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 //materials
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -58,7 +59,8 @@ import { FooterComponent } from './component/footer/footer.component';
     MatButtonModule,
     StlModelViewerModule,
     HttpClientModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   entryComponents:[MatDialogModule,ProjectEntryComponent],
   providers: [],
