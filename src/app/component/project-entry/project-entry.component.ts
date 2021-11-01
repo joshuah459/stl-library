@@ -6,7 +6,6 @@ import { StlViewerComponent } from '../stl-viewer/stl-viewer.component';
 import { Project } from 'src/app/Project';
 import { USER } from 'src/app/faux-users';
 import { User } from 'src/app/Users';
-import { PROJECT } from 'src/app/faux-projects';
 
 
 @Component({
@@ -17,20 +16,18 @@ import { PROJECT } from 'src/app/faux-projects';
 })
 export class ProjectEntryComponent implements OnInit {
 
-  project!: Project;
   currentUser!: User;
 
   fromPage!: string;
   fromDialog!: string;
  
   constructor(public dialogRef: MatDialogRef<ProjectEntryComponent>,
-    @Optional() @Inject (MAT_DIALOG_DATA) public data: {projectID: string}, public dialog: MatDialog ) {
+    @Optional() @Inject (MAT_DIALOG_DATA) public data: {project: Project}, public dialog: MatDialog ) {
       
   }
 
   ngOnInit(): void {
-    this.project = PROJECT.find(x => x.id == parseInt(this.data.projectID));
-    this.currentUser = USER.find(entry => entry.id == this.project.userID);
+    this.currentUser = USER.find(entry => entry.id == this.data.project.userID);
 
     
   }
@@ -40,7 +37,7 @@ export class ProjectEntryComponent implements OnInit {
       hasBackdrop: true,
       width: "50%",
       height: "90%",
-      data: { stl_src: this.project.stl_src},
+      data: { stl_src: this.data.project.stl_src},
       autoFocus: false,
     });
   }

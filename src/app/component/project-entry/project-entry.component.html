@@ -2,12 +2,12 @@
    <mat-dialog-content>
    <span >
     <a class="projectCloseButton,inline, right-child" (click)="closeDialog()">X</a>
-   <h1 class="projectCardHeader, inline, left-child">{{project.name}}</h1>
+   <h1 class="projectCardHeader, inline, left-child">{{data.project.name}}</h1>
 </span>
 
 <div></div>
 
-    <img class="projectImg" src={{project.img_src}}>
+    <img class="projectImg" src={{data.project.img_src}}>
 
 <div></div>
     
@@ -22,11 +22,11 @@
         
    
       <p>
-        {{project.description}}
+        {{data.project.description}}
       </p>
       <div class="bottomNavigation">
       <a mat-raised-button color="success" class="stlButton" (click)="openSTLDialog()">View 3D Model</a>
-      <a mat-raised-button color="success" class="downloadButton" href={{project.download_src}}>Download here</a>
+      <a mat-raised-button color="success" class="downloadButton" href={{data.project.download_src}}>Download here</a>
       </div>
     <div></div>
 </mat-dialog-content>

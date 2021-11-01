@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 //components
@@ -26,6 +27,8 @@ import { StlModelViewerModule } from  'angular-stl-model-viewer';
 
 //http
 import { HttpClientModule } from '@angular/common/http';
+import { ResultsContainerComponent } from './component/results-container/results-container.component';
+import { SearchBarContainerComponent } from './component/search-bar-container/search-bar-container.component';
 
 
 
@@ -38,6 +41,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProjectEntryComponent,
     StlViewerComponent,
     ProjectPreviewCardComponent,
+    ResultsContainerComponent,
+    SearchBarContainerComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -50,7 +55,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatButtonModule,
     StlModelViewerModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
   ],
   entryComponents:[MatDialogModule,ProjectEntryComponent],
   providers: [],

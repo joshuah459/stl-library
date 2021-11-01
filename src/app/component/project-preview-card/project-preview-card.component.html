@@ -1,1 +1,7 @@
-<p>project-preview-card works!</p>
+<mat-card class="projectCard" (click)="projectClicked()">
+    <img mat-card-image class="headerImg" src={{project.img_src}} alt={{project.name}}>
+    <mat-card-content>
+        <h2>{{project.name}}</h2>  
+    </mat-card-content>
+  </mat-card>
+

@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  title = 'zogoProject';
+  title = 'STL-Library';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  toggleAddTask(){
-    alert('toggle');
+  moveToGitHub(){
+    window.location.href = 'https://github.com/joshuah459/stl-library';
   }
 }
