@@ -23,5 +23,18 @@
 
 .searchButton {
     position: relative;
-    right: 4%;
+    right: 3%;
   }
+
+@media screen and (max-device-width: 480px) {
+    .searchContainer{
+        width: 100%;
+        text-align: center;
+    }
+    .searchBar {
+        width: 90%;
+    }
+    .searchButton {
+        display: none;
+      }
+}

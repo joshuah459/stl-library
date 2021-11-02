@@ -7,3 +7,17 @@
       width: 50px;
       padding-right: 10px;
   }
+
+  .toolbar {
+    width: 100% !important;
+  }
+
+  @media screen and (max-device-width: 480px) {
+    
+    .toolbar {
+        width: 100% !important;
+    }
+    
+    
+    
+  }
