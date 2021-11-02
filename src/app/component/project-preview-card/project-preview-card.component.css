@@ -1,14 +1,13 @@
 .projectCard {
-  
     width: 180px;
     height: 210px;
     text-align: center;
-  }
+}
 
-  .headerImg {
+.headerImg {
     height: 180px;
     width: 200;
-  }
+}
 
 .mat-card{
   margin-top: 20px;

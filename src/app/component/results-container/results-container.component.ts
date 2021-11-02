@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
+//import the project interface
 import { Project } from 'src/app/Project';
 
 //services
@@ -20,30 +22,24 @@ export class ResultsContainerComponent implements OnInit {
   constructor(private homeService: HomeFinderService, private dataService: ProjectDataService) {
 
   }
-
+  //populate the results with the projects from the data service
   ngOnInit(): void {
    this.dataService.getProjects.subscribe((resp) => {
+     //if an empty list is sent by the data service the results should display an error
     if(resp.length == 0){
       this.displayElement = false;
       this.displayError = true;
-      this.headerText = this.dataService.grabText();
+      
     }else {
+    //if the list sent by the data service is not empty then update the local project list 
+    //this will force a redrawing of the results component and any child components
     this.displayElement = true;
     this.displayError = false;
     this.Projects = resp;
+    }
+    //update the header text to contain the search phrase
     this.headerText = this.dataService.grabText();
-    }
   });
-  }
-
-  updateProjectList(list: Project[]){
-    if(list.length == 0){
-      this.displayError = true;
-    }else{
-      this.displayElement = false;
-      this.Projects = list;
-      this.displayElement = true;
-    }
   }
 
 }

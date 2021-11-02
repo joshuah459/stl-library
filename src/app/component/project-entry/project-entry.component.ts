@@ -1,8 +1,11 @@
 import { Component, OnInit, Inject, Optional } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatDialog, _closeDialogVia } from '@angular/material/dialog';
+
+//import the stl viewer
 import { StlViewerComponent } from '../stl-viewer/stl-viewer.component';
 
+//input data sources and interfaces
 import { Project } from 'src/app/Project';
 import { USER } from 'src/app/faux-users';
 import { User } from 'src/app/Users';
@@ -26,12 +29,12 @@ export class ProjectEntryComponent implements OnInit {
       
   }
 
+  //on initialization we need to use the project.userID to fine the users information to pass to the page
   ngOnInit(): void {
     this.currentUser = USER.find(entry => entry.id == this.data.project.userID);
-
-    
   }
 
+  //on click, open a dialog that uses the stlviewer component to show the user the projects associated 3d model in an interactable way
   openSTLDialog(){
     const dialogRef = this.dialog.open(StlViewerComponent, {
       hasBackdrop: true,
