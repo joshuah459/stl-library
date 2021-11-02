@@ -12,7 +12,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { ResultsContainerComponent } from './component/results-container/results-container.component';
+import { SearchBarContainerComponent } from './component/search-bar-container/search-bar-container.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 //components
 import { AppComponent } from './app.component';
@@ -28,9 +30,7 @@ import { StlModelViewerModule } from  'angular-stl-model-viewer';
 
 //http
 import { HttpClientModule } from '@angular/common/http';
-import { ResultsContainerComponent } from './component/results-container/results-container.component';
-import { SearchBarContainerComponent } from './component/search-bar-container/search-bar-container.component';
-import { FooterComponent } from './component/footer/footer.component';
+
 
 
 

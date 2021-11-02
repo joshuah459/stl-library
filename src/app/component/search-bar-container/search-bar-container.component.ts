@@ -1,5 +1,7 @@
 import { Component, EventEmitter, OnInit, Output, NgModule } from '@angular/core';
-
+import { HomeFinderService } from 'src/app/services/home-finder.service';
+import { ResultsContainerComponent } from '../results-container/results-container.component';
+import { ProjectDataService } from 'src/app/services/project-data.service';
 
 @Component({
   selector: 'app-search-bar-container',
@@ -8,12 +10,12 @@ import { Component, EventEmitter, OnInit, Output, NgModule } from '@angular/core
 })
 export class SearchBarContainerComponent implements OnInit {
   queryTerm: string = '';
-  constructor() { }
+  constructor(private homeService: HomeFinderService, private dataService: ProjectDataService) { }
 
   ngOnInit(): void {
   }
   searchThis(){
-      console.log(this.queryTerm);
+   this.dataService.loadSearchProjects(this.queryTerm);
   }
 
 }
