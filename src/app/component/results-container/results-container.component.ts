@@ -23,8 +23,16 @@ export class ResultsContainerComponent implements OnInit {
 
   ngOnInit(): void {
    this.dataService.getProjects.subscribe((resp) => {
+    if(resp.length == 0){
+      this.displayElement = false;
+      this.displayError = true;
+      this.headerText = this.dataService.grabText();
+    }else {
+    this.displayElement = true;
+    this.displayError = false;
     this.Projects = resp;
     this.headerText = this.dataService.grabText();
+    }
   });
   }
 

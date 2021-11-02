@@ -8,3 +8,10 @@
 .projectCardComp{
     padding: 100px, 15px, 15px, 100px;
 }
+.error {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}

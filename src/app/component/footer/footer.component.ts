@@ -12,4 +12,11 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  moveToGitHubFrontend(){
+    window.location.href = 'https://github.com/joshuah459/stl-library';
+  }
+  moveToGitHubBackend(){
+    window.location.href = 'https://github.com/joshuah459/stl-library-backend.git';
+  }
+
 }

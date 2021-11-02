@@ -5,9 +5,9 @@
     font-size: 30px;
     background-color: rgb(141, 141, 141);
     height: 10em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .searchBar {
