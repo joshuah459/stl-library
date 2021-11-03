@@ -34,12 +34,12 @@ export class ProjectEntryComponent implements OnInit {
     this.currentUser = USER.find(entry => entry.id == this.data.project.userID);
   }
 
-  //on click, open a dialog that uses the stlviewer component to show the user the projects associated 3d model in an interactable way
+  //on click, open a dialog that uses the stlviewer component to show the user the projects associated 3d model in an interactable
   openSTLDialog(){
     const dialogRef = this.dialog.open(StlViewerComponent, {
       hasBackdrop: true,
-      width: "50%",
-      height: "90%",
+      width: "fit",
+      height: "fit",
       data: { stl_src: this.data.project.stl_src},
       autoFocus: false,
     });

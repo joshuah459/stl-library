@@ -21,8 +21,8 @@ export class ProjectPreviewCardComponent{
   projectClicked(){
     const dialogRef = this.dialog.open(ProjectEntryComponent, {
       hasBackdrop: true,
-      width: "60%",
-      height: "70%",
+      width: "fit",
+      height: "fit",
       data: { project: this.project},
       autoFocus: false,
     });
